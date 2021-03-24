@@ -8,6 +8,7 @@ GraphQL is a query language for APIs and a server-side runtime that allows clien
 
 ### Fetching Data
 GraphQL provides a single endpoint from where client can request all the data that it needs by posting a query like this
+
           ```type Query {
               student_info: [Students]!
               }
@@ -15,11 +16,13 @@ GraphQL provides a single endpoint from where client can request all the data th
            
 ### Creating and Modifying data
 GraphQL provides a simple logic to create, update and delete data. it is called **mutation**. A mutation to create a new student information looks something like this
+
             ```type Mutation {
                   createStudentInfo(name: String!, age: Int!, gender: String!): Students!
                   }
                 ```
+                
 The mutation accepts 2 strings and 1 integer and returns a Student object.
 
-The first step in creating a graphQL API is designing the schema. i called mine schema.graphql, very similar to a JSON file bunch of key value pairs
+The first step in creating a graphQL API is designing the schema. I called mine schema.graphql, very similar to a JSON file bunch of key value pairs. [my schema ](https://github.com/Abuton/todoAPI/schema.graphql)
                 
